@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 
 import { AppComponent }   from './app.component';
+import { routing } from "./app.routing";
 import { UserComponent } from "./user/user.component";
 import { UserDetailComponent } from "./user/user-detail.component";
 import { UserEditComponent } from "./user/user-edit.component";
 import { HomeComponent } from "./home-component.component";
+
 
 
 @NgModule({
@@ -16,7 +18,7 @@ import { HomeComponent } from "./home-component.component";
         UserEditComponent,
         HomeComponent
     ],
-    imports: [BrowserModule],
+    imports: [BrowserModule, routing],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
