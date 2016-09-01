@@ -1,10 +1,17 @@
-import { Component } from '@angular/core'
+import {Component} from '@angular/core'
+import { ROUTER_DIRECTIVES } from "@angular/router";
 
 
 @Component({
-  moduleId: module.id,
-  selector: 'app-root',
-  templateUrl: 'app.component.html'
+	moduleId: module.id,
+	selector: 'app-root',
+	templateUrl: 'app.component.html',
+	styles: [`
+	.active{
+		color: red;
+	}
+	`],
+	directives: [ROUTER_DIRECTIVES]
 })
 export class AppComponent {
 	constructor() {

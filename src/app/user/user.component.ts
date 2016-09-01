@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { Router, ActivatedRoute } from "@angular/router";
+import { ROUTER_DIRECTIVES, Router, ActivatedRoute } from "@angular/router";
 import { Subscription } from "rxjs";
 
 
@@ -13,7 +13,8 @@ import { Subscription } from "rxjs";
       {{id}}
       <hr>
       <router-outlet></router-outlet>
-    `
+    `,
+	directives: [ROUTER_DIRECTIVES]
 })
 export class UserComponent implements  OnDestroy{
 	private subscription: Subscription;
