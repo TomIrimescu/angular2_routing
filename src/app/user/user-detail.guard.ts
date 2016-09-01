@@ -3,6 +3,6 @@ import { Observable } from "rxjs";
 
 export class UserDetailGuard implements CanActivate{
 	canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | boolean{
-		return confirm('Are you sure?');
+		return confirm('Are you sure you have permission to view this page?\nDETAIL canActivate method');
 	}
 }

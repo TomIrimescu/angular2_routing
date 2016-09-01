@@ -9,14 +9,13 @@ import { Observable } from "rxjs";
 	template: `
         <h3>User Edit</h3>
         <button (click)="done = true">Done</button>
-        <button class="btn btn-alert" (click)="onNavigate()">Go Home</button>
+        <button (click)="onNavigate()">Go Home</button>
     `
 } )
 export class UserEditComponent implements ComponentCanDeactivate {
 	done = false;
 
-	constructor ( private  router: Router ) {
-	}
+	constructor ( private router: Router ) {}
 
 	onNavigate () {
 		this.router.navigate( [ '/' ] );
@@ -24,7 +23,7 @@ export class UserEditComponent implements ComponentCanDeactivate {
 
 	canDeactivate(): Observable<boolean> | boolean {
 		if (!this.done) {
-			return confirm('Do you want to leave?');
+			return confirm('Are you satisfied with the edits on this page?\nEDIT canDeactivate method');
 		}
 		return true;
 	}
