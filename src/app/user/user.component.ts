@@ -1,10 +1,9 @@
 import { Component, OnDestroy } from '@angular/core';
-import { ROUTER_DIRECTIVES, Router, ActivatedRoute } from "@angular/router";
+import { Router, ActivatedRoute } from "@angular/router";
 import { Subscription } from "rxjs";
 
 
 @Component({
-  moduleId: module.id,
   selector: 'app-user-component',
   template: `
       <h1>User Component</h1>
@@ -13,8 +12,7 @@ import { Subscription } from "rxjs";
       {{id}}
       <hr>
       <router-outlet></router-outlet>
-    `,
-	directives: [ROUTER_DIRECTIVES]
+    `
 })
 export class UserComponent implements  OnDestroy{
 	private subscription: Subscription;

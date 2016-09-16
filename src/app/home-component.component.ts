@@ -3,7 +3,6 @@ import { ActivatedRoute } from "@angular/router";
 import { Subscription } from "rxjs";
 
 @Component({
-  moduleId: module.id,
   selector: 'app-home-component',
   template: `
     <h1>

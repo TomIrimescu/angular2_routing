@@ -4,7 +4,6 @@ import { ComponentCanDeactivate } from "./user-edit.guard";
 import { Observable } from "rxjs";
 
 @Component( {
-	moduleId: module.id,
 	selector: 'app-user-edit',
 	template: `
         <h3>User Edit</h3>
