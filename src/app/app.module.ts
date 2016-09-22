@@ -11,7 +11,6 @@ import { UserDetailGuard } from "./user/user-detail.guard";
 import { UserEditGuard } from "./user/user-edit.guard";
 
 
-
 @NgModule({
     declarations: [
         AppComponent,

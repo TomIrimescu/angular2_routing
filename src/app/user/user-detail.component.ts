@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-user-detail',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
       <h3>View user Details</h3>
     `
 })
-export class UserDetailComponent {
+export class UserDetailComponent implements OnInit {
+    ngOnInit() {
+        console.log("OnInit");
+    }
 }

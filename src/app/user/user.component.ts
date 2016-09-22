@@ -1,7 +1,6 @@
 import { Component, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
-import { Subscription } from "rxjs";
-
+import { Subscription } from "rxjs/Rx";
 
 @Component({
   selector: 'app-user-component',
